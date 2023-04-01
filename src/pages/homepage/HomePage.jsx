@@ -4,7 +4,6 @@ import Topbar from "./components/Topbar";
 import { ContentWrapper, QUERIES } from "../../../Constraints";
 import { FaQuoteLeft } from "react-icons/fa";
 import rafi from "../../assets/rafi.jpg";
-import wave from "../../assets/Wave.png";
 import Flag from "../../components/Flag";
 
 const HomePage = () => {
