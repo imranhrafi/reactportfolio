@@ -1,0 +1,34 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "position": "Web Developer",
+      "company": "influenceTHIS Canada",
+      "date": "2018-2019",
+      "location": "Remote (Toronto, Canada)",
+      "website": "https://influencethis.ca",
+      "description": "Developed the UI and UX eco-system for a conference event platform using modular component structures with JS, SCSS, Gulp on Node.",
+      "technologies": ["JS", "GULP", "SCSS", "Nodejs"]
+    },
+    {
+      "id": 2,
+      "position": "Front-End Developer",
+      "company": "ABC Corporation",
+      "date": "2017-2018",
+      "location": "New York, NY",
+      "website": "https://abccorp.com",
+      "description": "Collaborated with a team to create responsive websites and web applications using React, Redux, HTML, CSS and JavaScript.",
+      "technologies": ["React", "Redux", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 3,
+      "position": "Software Engineer",
+      "company": "XYZ Inc.",
+      "date": "2016-2017",
+      "location": "San Francisco, CA",
+      "website": "https://xyzinc.com",
+      "description": "Developed back-end systems and APIs using Python and Flask framework. Designed and implemented data models for scalable applications.",
+      "technologies": ["Python", "Flask", "REST APIs", "SQLAlchemy"]
+    }
+  ]
+}
