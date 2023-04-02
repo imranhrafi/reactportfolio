@@ -11,8 +11,10 @@ const SingleProject = () => {
   );
   return (
     <SingleProjectWrapper>
-      <Header>{project.name}</Header>
-      <Desc>{project.longDescription}</Desc>
+      <Header>
+        <Heading>{project.name}</Heading>
+        <Desc>{project.longDescription}</Desc>
+      </Header>
       <InfoWrapper>
         <Stack>
           <SmallHeader>STACK</SmallHeader>
@@ -46,9 +48,13 @@ const SingleProject = () => {
 
 const SingleProjectWrapper = styled(ContentWrapper)`
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
+const Header = styled.div``;
 
-const Header = styled.h1`
+const Heading = styled.h1`
   margin-left: 5rem;
   margin-top: 3rem;
 `;
@@ -94,7 +100,7 @@ const Content = styled.div`
     auto-fill,
     minmax(min(50rem, 100%), 1fr)
   );
-  gap: 15px;
+  gap: 5.4rem;
   padding: 16px;
   align-items: center;
   &:nth-of-type(even) {

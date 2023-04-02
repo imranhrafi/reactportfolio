@@ -39,7 +39,7 @@ const HomePage = () => {
 };
 
 const HomePageWrapper = styled(ContentWrapper)`
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 4rem;
   padding-right: 1rem;
   padding-left: 1rem;
