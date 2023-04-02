@@ -8,10 +8,10 @@ export default defineConfig({
     outDir: "dist",
     rollupOptions: {
       external: [
-        "react-icons/Ai",
-        "react-icons/Bs",
-        "react-icons/fa",
-        "react-icons/Vsc",
+        // "react-icons/Ai",
+        // "react-icons/Bs",
+        // "react-icons/fa",
+        // "react-icons/Vsc",
       ],
     },
   },
