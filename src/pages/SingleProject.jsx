@@ -9,6 +9,7 @@ const SingleProject = () => {
   const project = projectData.projects.find(
     (p) => p.id === parseInt(id)
   );
+
   return (
     <SingleProjectWrapper>
       <Header>

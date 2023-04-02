@@ -44,6 +44,7 @@ const HomePageWrapper = styled(ContentWrapper)`
   padding-right: 1rem;
   padding-left: 1rem;
   position: relative;
+  color: ${(props) => props.theme.text};
   background-color: ${(props) => props.theme.background};
   flex-direction: column;
   align-items: start;
@@ -59,6 +60,9 @@ const Heading = styled.h1`
   margin-bottom: auto;
   margin-left: clamp(4rem, 4vw, 4.8rem);
   color: ${(props) => props.theme.text};
+  @media ${QUERIES.phoneAndSmaller} {
+    margin-left: 0;
+  }
 
   span {
     font-weight: bold;
