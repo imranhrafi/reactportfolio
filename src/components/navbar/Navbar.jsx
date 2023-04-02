@@ -5,7 +5,7 @@ import NavList from "./components/NavList";
 import {
   AiOutlineMenuFold,
   AiOutlineMenuUnfold,
-} from "react-icons/Ai";
+} from "/node_modules/react-icons/ai";
 import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/Bs";
 import { Link } from "react-router-dom";
 

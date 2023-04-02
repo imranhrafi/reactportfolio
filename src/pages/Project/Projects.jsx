@@ -2,7 +2,7 @@ import React from "react";
 import {
   AiOutlineArrowRight,
   AiOutlineFundProjectionScreen,
-} from "react-icons/Ai";
+} from "/node_modules/react-icons/ai";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ContentWrapper, QUERIES } from "../../../Constraints";
