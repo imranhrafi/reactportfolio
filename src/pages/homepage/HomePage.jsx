@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Topbar from "./components/Topbar";
 import { ContentWrapper, QUERIES } from "../../../Constraints";
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft } from "/node_modules/react-icons/fa";
 import rafi from "../../assets/rafi.jpg";
 import Flag from "../../components/Flag";
 

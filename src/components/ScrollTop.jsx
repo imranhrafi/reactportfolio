@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { VscChevronUp } from "react-icons/Vsc";
+import { VscChevronUp } from "/node_modules/react-icons/vsc";
 import styled from "styled-components";
 
 import { ContentWrapper } from "../../Constraints";

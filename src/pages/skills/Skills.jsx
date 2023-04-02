@@ -11,7 +11,7 @@ import {
   FaRegGem,
   FaCss3Alt,
   FaGitAlt,
-} from "react-icons/fa";
+} from "/node_modules/react-icons/fa";
 
 const renderIcon = (iconName) => {
   switch (iconName) {
