@@ -6,7 +6,10 @@ import {
   AiOutlineMenuFold,
   AiOutlineMenuUnfold,
 } from "/node_modules/react-icons/ai";
-import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/Bs";
+import {
+  BsFillSunFill,
+  BsFillMoonStarsFill,
+} from "/node_modules/react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ toggleTheme, currentTheme }) => {
