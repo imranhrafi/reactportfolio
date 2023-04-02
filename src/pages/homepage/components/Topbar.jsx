@@ -4,7 +4,7 @@ import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
   AiOutlineGithub,
-} from "react-icons/Ai";
+} from "/node_modules/react-icons/ai";
 
 const Topbar = () => {
   return (
