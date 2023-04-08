@@ -77,7 +77,7 @@ const CardContainer = styled.div`
 
 const ProjectList = styled.div`
   /* flex: 1 1 40%; */
-  /* margin-bottom: 15rem; */
+  margin-bottom: 7rem;
   height: 61rem;
 `;
 

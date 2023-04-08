@@ -1,7 +1,7 @@
 const theme = {
   light: {
     background: "hsl(0, 0%, 100%)",
-    text: "hsl(0, 0%, 0%)",
+    text: "#000000",
     alterText: "#FFFFFF",
     primary: "hsl(96, 72%, 67%)",
     secondary: "hsl(45, 100%, 51%)",

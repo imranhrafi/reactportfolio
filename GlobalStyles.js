@@ -32,7 +32,7 @@ body {
 /* Typography */
 h1 {
 
-  font-size: clamp(6rem, -5.3vw + 6.3rem, 4.8rem);
+  font-size: clamp(6rem, -5.3vw + 6.3rem, 2.8rem);
 
   
   }
@@ -59,7 +59,7 @@ h1, h2, h3, h4,h5,h5{
   font-family: 'Inter', sans-serif;
   line-height: 82px;
   font-weight: 900;
-  line-height: clamp(1.5em, 1.5em + 0.25vw, 2.25em);
+  line-height: clamp(1.5em, 1.5em + 0.25vw, 1em);
 
     @media ${QUERIES.phoneAndSmaller}{
       /* line-height: 4rem; */
@@ -69,7 +69,6 @@ h1, h2, h3, h4,h5,h5{
 p, a, strong {
   font-size: clamp(1.6rem, 2vw, 2rem);
   overflow-wrap: break-word;
-  color: #999999;
 }
 ul, ol {
   margin: 0;
