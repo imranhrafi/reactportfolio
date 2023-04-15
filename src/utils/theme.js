@@ -3,7 +3,7 @@ const theme = {
     background: "hsl(0, 0%, 100%)",
     text: "#000000",
     alterText: "#FFFFFF",
-    primary: "hsl(96, 72%, 67%)",
+    primary: "hsl(96, 72%, 47%)",
     secondary: "hsl(45, 100%, 51%)",
     gray: {
       100: "hsl(185, 5%, 95%)",
@@ -23,7 +23,7 @@ const theme = {
     background: "#1D1E20",
     text: "#FFFFFF",
     alterText: "hsl(0, 0%, 0%)",
-    primary: "hsl(207, 89%, 68%)",
+    primary: "hsl(96, 72%, 47%)",
     secondary: "#FFD54F",
     gray: {
       100: "hsl(185, 5%, 20%)",

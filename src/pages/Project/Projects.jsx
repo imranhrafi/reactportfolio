@@ -20,7 +20,7 @@ const Projects = () => {
       <CardContainer>
         {projectData.projects.map((data) => {
           return (
-            <ProjectList key={data.id}>
+            <Project key={data.id}>
               <Link to={`/projects/${data.id}`}>
                 <Image src={data.featuredImage} alt={data.name} />
               </Link>
@@ -36,7 +36,7 @@ const Projects = () => {
                 View Project
                 <ArrowRight />
               </Button>
-            </ProjectList>
+            </Project>
           );
         })}
       </CardContainer>
@@ -45,7 +45,7 @@ const Projects = () => {
 };
 
 const ProjectWrapper = styled(ContentWrapper)`
-  margin-top: 21rem;
+  margin-top: 10rem;
   padding: 2rem;
 `;
 
@@ -66,7 +66,7 @@ const Moto = styled.p`
 const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(10%, 4vw, 5%);
+  gap: clamp(7%, 4vw, 2%);
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: 1fr;
@@ -75,10 +75,12 @@ const CardContainer = styled.div`
   }
 `;
 
-const ProjectList = styled.div`
+const Project = styled.div`
   /* flex: 1 1 40%; */
-  margin-bottom: 7rem;
   height: 61rem;
+  @media ${QUERIES.phoneAndSmaller} {
+    margin-bottom: 7rem;
+  }
 `;
 
 const Image = styled.img`
@@ -90,7 +92,9 @@ const Image = styled.img`
   border-top-right-radius: 1rem;
 `;
 
-const ProjectName = styled.h1``;
+const ProjectName = styled.h2`
+  /* line-height: 8rem; */
+`;
 
 const Description = styled.p`
   margin-bottom: 1.5rem;
@@ -124,6 +128,7 @@ const Button = styled(Link)`
   gap: 1rem;
   color: ${(props) => props.theme.primary};
   padding: 0.5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   position: relative;
   margin-top: auto;
@@ -139,7 +144,7 @@ const Button = styled(Link)`
     bottom: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 200ms ease-in-out;
     z-index: -1;
   }
 
@@ -148,7 +153,7 @@ const Button = styled(Link)`
     height: 100%;
   }
   &:hover {
-    color: ${(props) => props.theme.alterText};
+    color: ${(props) => props.theme.text};
   }
 `;
 

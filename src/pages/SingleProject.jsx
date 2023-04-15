@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
-import { ContentWrapper } from "../../Constraints";
+import { ContentWrapper, QUERIES } from "../../Constraints";
 import { projectData } from "../data/projects";
 
 const SingleProject = () => {
@@ -9,6 +9,10 @@ const SingleProject = () => {
   const project = projectData.projects.find(
     (p) => p.id === parseInt(id)
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <SingleProjectWrapper>
@@ -68,8 +72,11 @@ const Desc = styled.p`
 
 const InfoWrapper = styled.div`
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
   margin-bottom: 5rem;
+  @media ${QUERIES.phoneAndSmaller} {
+    gap: 5rem;
+  }
 `;
 
 const Stack = styled.div`
@@ -89,13 +96,20 @@ const SmallHeader = styled.h5``;
 const LivePreview = styled.div``;
 
 const Live = styled(Link)`
+  font-weight: bold;
   font-size: 1.2rem;
   color: ${(props) => props.theme.primary};
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
-const FeaturedImage = styled.img``;
+const FeaturedImage = styled.img`
+  border-radius: 0.5rem;
+`;
 
 const Content = styled.div`
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
@@ -107,8 +121,13 @@ const Content = styled.div`
   &:nth-of-type(even) {
     direction: rtl;
   }
+  @media ${QUERIES.phoneAndSmaller} {
+    gap: 3rem;
+  }
 `;
-const ContentImage = styled.img``;
+const ContentImage = styled.img`
+  border-radius: 0.5rem;
+`;
 const ContentDescription = styled.p`
   text-align: center;
 `;

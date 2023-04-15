@@ -60,9 +60,10 @@ const Heading = styled.h1`
   margin-bottom: auto;
   margin-left: clamp(4rem, 4vw, 4.8rem);
   color: ${(props) => props.theme.text};
-  @media ${QUERIES.phoneAndSmaller} {
+  /* @media ${QUERIES.phoneAndSmaller} {
     margin-left: 0;
-  }
+    font-size: 3rem;
+  } */
 
   span {
     font-weight: bold;

@@ -29,17 +29,37 @@ body {
   height: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 /* Typography */
 h1 {
 
-  font-size: clamp(6rem, -5.3vw + 6.3rem, 2.8rem);
+  font-size: clamp(3rem, 4.326vw + 1.209rem, 6.4rem);
+line-height: clamp(4.5, 4.86vw + 1.555rem, 8rem);
 
-  
   }
 
 h2 {
 
-  font-size: clamp(2rem, 3.5vw, 4rem);
+  font-size: clamp(2rem, 2.545vw + .9rem, 4rem);
+line-height: clamp(35rem, 2.799vw + 1.8rem, 5.2rem);
 }
 h3 {
   line-height: 82px;
@@ -66,8 +86,13 @@ h1, h2, h3, h4,h5,h5{
 
     }
 }
+a{
+  color: inherit;
+  text-decoration: none;
+}
 p, a, strong {
-  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-size: clamp(1.6rem, 0.509vw + 1.3rem, 2rem);
+line-height: clamp(2.6rem, 0.254vw + 2.3rem, 3rem);
   overflow-wrap: break-word;
 }
 ul, ol {
